@@ -1,7 +1,5 @@
 public class AppTelevisao {
     public static void main (String[] args) {
-        int a;
-        String b;
 
         Televisao t = new Televisao();
         Televisao v = new Televisao();
