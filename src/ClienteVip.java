@@ -14,7 +14,6 @@ public class ClienteVip extends Cliente{
         return this.creditoEspecial;
     }
 
-    @Override
     public String toString(){
         return "(VIP)" + super.toString() + " // Credito Especial: R$" + this.creditoEspecial;
     }
@@ -26,5 +25,13 @@ public class ClienteVip extends Cliente{
             super.setCredito(super.getCredito() - valor);
             return true;
         }
+    }
+
+    public float calculaCredito(){
+        if (getCredito() < 0){
+            creditoEspecial += getCredito();
+            setCredito(0);
+        }
+        return creditoEspecial;
     }
 }

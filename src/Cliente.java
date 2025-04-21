@@ -17,7 +17,6 @@ public class Cliente {
         return this.credito;
     }
 
-    @Override
     public String toString(){
         return "Cliente: " + this.nome + "(" + this.email + ") - R$" + this.credito;
     }

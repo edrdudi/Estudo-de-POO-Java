@@ -4,21 +4,24 @@ public class AppLoja {
     public static void main (String[] args){
         float valorCompra;
         Scanner teclado = new Scanner(System.in);
-        Cliente c = new Cliente("Dudi", "dudi@dudi", 200);
-        ClienteVip cVIP = new ClienteVip("Nat", "nat@nat", 250, 50);
+        //Cliente c1;
 
-        System.out.println(c);
-        System.out.println(cVIP);
+        //c1 = new Cliente("Dudi", "dudi@dudi", 200);
+        ClienteVip c2 = new ClienteVip("Nat", "nat@nat", 250, 50);
+
+        System.out.println(c2);
 
         System.out.println("Digite o valor a pagar");
         valorCompra = teclado.nextFloat();
 
-        if (c.fazerCompra(valorCompra)) {
+        if (c2.fazerCompra(valorCompra)) {
             System.out.println("Compra aprovada");
         } else {
             System.out.println("Compra negada");
         }
 
-        System.out.println(c);
+        c2.calculaCredito();
+
+        System.out.println(c2);
     }
 }
