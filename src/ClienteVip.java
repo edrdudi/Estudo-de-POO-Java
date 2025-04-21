@@ -14,6 +14,7 @@ public class ClienteVip extends Cliente{
         return this.creditoEspecial;
     }
 
+    @Override
     public String toString(){
         return "(VIP)" + super.toString() + " // Credito Especial: R$" + this.creditoEspecial;
     }
