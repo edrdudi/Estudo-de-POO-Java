@@ -7,22 +7,6 @@ public class QuestaoSimples {
         this.resposta = resposta;
     }
 
-    public String getEnunciado(){
-        return this.enunciado;
-    }
-
-    public void setEnunciado(String enunciado){
-        this.enunciado = enunciado;
-    }
-
-    public String getResposta(){
-        return this.resposta;
-    }
-
-    public void setResposta(String resposta){
-        this.resposta = resposta;
-    }
-
     public String aplicarQuestao(){
         return enunciado;
     }
