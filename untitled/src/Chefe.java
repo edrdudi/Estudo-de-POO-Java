@@ -10,31 +10,7 @@ public class Chefe extends Funcionario {
         this.beneficioTerno = beneficioTerno;
     }
 
-    public float getSalarioBase(){
-        return this.salarioBase;
-    }
-
-    public void setSalarioBase(float salarioBase){
-        this.salarioBase = salarioBase;
-    }
-
-    public float getAdicionalFuncao(){
-        return this.adicionalFuncao;
-    }
-
-    public void setAdicionalFuncao(float adicionalFuncao){
-        this.adicionalFuncao = adicionalFuncao;
-    }
-
-    public float getBeneficioTerno(){
-        return this.beneficioTerno;
-    }
-
-    public void setBeneficioTerno(float beneficioTerno){
-        this.beneficioTerno = beneficioTerno;
-    }
-
-    public float calcularSalario(float valor){
-        return salarioBase + adicionalFuncao + beneficioTerno;
+    public float calcularSalario(){
+        return this.salarioBase + this.salarioBase * adicionalFuncao/100 + beneficioTerno;
     }
 }

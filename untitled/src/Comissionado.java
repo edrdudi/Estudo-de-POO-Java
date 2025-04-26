@@ -8,23 +8,7 @@ public class Comissionado extends Funcionario {
         this.comissao = comissao;
     }
 
-    public float getSalarioBase(){
-        return this.salarioBase;
-    }
-
-    public void setSalarioBase(float salarioBase){
-        this.salarioBase = salarioBase;
-    }
-
-    public float getComissao(){
-        return this.comissao;
-    }
-
-    public void setComissao(float comissao){
-        this.comissao = comissao;
-    }
-
-    public float calcularSalario(float valor){
-        return this.salarioBase + (this.comissao * valor);
+    public float calcularSalario(){
+        return this.salarioBase + (this.salarioBase * this.comissao);
     }
 }

@@ -6,15 +6,7 @@ public class Empreiteiro extends Funcionario {
         this.valorEmpreita = valorEmpreita;
     }
 
-    public float getValorEmpreita(){
+    public float calcularSalario(){
         return this.valorEmpreita;
-    }
-
-    public void setValorEmpreita(float valorEmpreita){
-        this.valorEmpreita = valorEmpreita;
-    }
-
-    public float calcularSalario(float valor){
-        return this.valorEmpreita * valor;
     }
 }
