@@ -4,17 +4,17 @@ import java.util.Collections;
 public class TesteOrdenado {
     public static void main(String[] args){
 
-        ArrayList<String> listaNomes = new ArrayList<String>();
+        ArrayList<Player> listaPlayers = new ArrayList<Player>();
 
-        listaNomes.add("Dudi");
-        listaNomes.add("Nat");
-        listaNomes.add("Vera");
-        listaNomes.add("Elvio");
+        listaPlayers.add(new Player(1, "Dudi", 200));
+        listaPlayers.add(new Player(5, "Nat", 150));
+        listaPlayers.add(new Player(2, "Vera", 330));
+        listaPlayers.add(new Player(7,"Elvio", 100));
 
-        Collections.sort(listaNomes);
+        Collections.sort(listaPlayers);
 
-        for (String s : listaNomes){
-            System.out.println("Nome: " + s);
+        for (Player p : listaPlayers){
+            System.out.println("Nome: " + p);
         }
     }
 }
