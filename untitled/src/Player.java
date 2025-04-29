@@ -39,12 +39,11 @@ public class Player implements Comparable<Player>{
 
     public int compareTo(Player other){
         if (this.points > other.points){
-            return 1;
-        } else if (this.points < other.points){
             return -1;
+        } else if (this.points < other.points){
+            return 1;
         } else {
-            return 0;
+            return this.userName.compareTo(other.userName);
         }
     }
-
 }
