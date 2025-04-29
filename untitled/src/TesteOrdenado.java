@@ -10,6 +10,7 @@ public class TesteOrdenado {
         listaPlayers.add(new Player(5, "Nat", 150));
         listaPlayers.add(new Player(2, "Vera", 330));
         listaPlayers.add(new Player(7,"Elvio", 100));
+        listaPlayers.add(new Player(12, "Enzo", 200));
 
         Collections.sort(listaPlayers);
 
